@@ -1,0 +1,6 @@
+package gui;
+
+class ProcedimentoFinalizarAcesso
+{
+
+}
