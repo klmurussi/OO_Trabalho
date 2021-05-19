@@ -1,37 +1,41 @@
 package dados;
 
-
 public class Veiculo
 {
-	private String versao;
+	private String marca;
 	private String modelo;
 	private String numero;
 	private Cliente dono;
 	
-	public Veiculo(String versao, String modelo, String numero, Cliente cliente)
+	public Veiculo(String marca, String modelo, String numero)
 	{
-		this.versao=versao;
+		this.marca=marca;
 		this.modelo=modelo;
 		this.numero=numero;
-		this.dono=cliente;
+		dono=null;
 	}
-
-	public String get_versao()
+	
+	public String get_marca()
 	{
-		return versao;
+		return marca;
 	}
-
-	public String get_numero()
-	{
-		return numero;
-	}
-
+	
 	public String get_modelo()
 	{
 		return modelo;
 	}
 	
-	public Cliente set_cliente(Cliente cliente)
+	public String get_numero()
+	{
+		return numero;
+	}
+	
+	public void set_dono(Cliente cliente)
+	{
+		dono=cliente;
+	}
+	
+	public Cliente get_dono()
 	{
 		return dono;
 	}

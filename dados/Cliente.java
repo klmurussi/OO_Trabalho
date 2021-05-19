@@ -21,22 +21,22 @@ public class Cliente
 		veiculos=new Vector<Veiculo>();
 	}
 	
-	public String get_nome()
+	public String get_name()
 	{
 		return nome;
 	}
 	
-	public String get_endereco()
+	public String get_address()
 	{
 		return endereco;
 	}
 	
-	public String get_celular()
+	public String get_phone()
 	{
 		return celular;
 	}
 	
-	public String get_telefone()
+	public String get_telephone()
 	{
 		return telefone;
 	}
@@ -44,6 +44,11 @@ public class Cliente
 	public String get_CNH()
 	{
 		return CNH;
+	}
+	
+	public void add_vehicle(Veiculo veiculo)
+	{
+		veiculos.add(veiculo);
 	}
 	
 	public Vector<Veiculo> get_veiculos()
