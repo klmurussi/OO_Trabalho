@@ -7,11 +7,11 @@ import java.util.Vector;
 import dados.Acesso;
 import janelaFramework.JanelaFramework;
 
-class ProcedimentoMostrarAcesso extends ProcedimentoProcurar<Acesso> implements Procedimento
+class ProcedimentoDeletarAcesso extends ProcedimentoProcurar<Acesso> implements Procedimento
 {
 	private Procedimento procedimento_anterior;
 	
-	protected ProcedimentoMostrarAcesso(Vector<Acesso> acessos, Procedimento procedimento_anterior)
+	protected ProcedimentoDeletarAcesso(Vector<Acesso> acessos, Procedimento procedimento_anterior)
 	{
 		super(acessos, procedimento_anterior);
 		this.procedimento_anterior=procedimento_anterior;
@@ -23,7 +23,7 @@ class ProcedimentoMostrarAcesso extends ProcedimentoProcurar<Acesso> implements 
 		{
 			public void actionPerformed(ActionEvent e)
 			{
-				ProcedimentoAcesso procedimento=new ProcedimentoAcesso(acesso, procedimento_anterior);
+				ProcedimentoValor procedimento=new ProcedimentoValor(acesso, procedimento_anterior);
 				procedimento.atualizar(janela);
 			}
 		};
